@@ -81,3 +81,7 @@ $ docker build -t "ethereum" .
 $ docker container run --name ethereum -d -p 8545:8545 -p 30303:30303 ethereum
 $ docker exec -it ethereum geth attach ipc:///usr/local/src/.ethereum/geth.ipc
 ```
+### Run Mist in Windows to connect in another node
+```sh
+> Mist.exe --rpc http://<ip>:8545
+```
