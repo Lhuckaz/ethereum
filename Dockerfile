@@ -1,14 +1,15 @@
 FROM ubuntu:18.04
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 WORKDIR /usr/local/src/
 
 COPY . .
 
 RUN apt-get update \
-    && apt-get install -y software-properties-common --no-install-recommends \
+    && apt-get install -y software-properties-common apt-utils --no-install-recommends \
     && add-apt-repository -y ppa:ethereum/ethereum \
     && apt-get install -y --no-install-recommends -y \
-    apt-utils  \
     nodejs \
     ethereum \
     solc \
