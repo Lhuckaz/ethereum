@@ -5,7 +5,7 @@ $ sudo add-apt-repository -y ppa:ethereum/ethereum
 $ sudo apt-get update
 $ sudo apt-get install ethereum solc -y
 ```
-## Install Mist-linu64-0-11-1.deb
+Install: Mist-linu64-0-11-1.deb
 ```sh
 $ mkdir ethereum
 $ cd ethereum
