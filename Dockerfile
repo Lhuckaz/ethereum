@@ -19,4 +19,4 @@ RUN apt-get update \
 
 EXPOSE 8545/tcp
 
-ENTRYPOINT [ "geth", "--identity", "'BlockchainX'", "--datadir", "/usr/local/src/ethereum/", "--rpc", "--rpcapi", "'db,eth,net,web3'", "--rpcaddr", "0.0.0.0", "--rpcport", "8545", "--rpccorsdomain", "'*'", "--ipcpath", "/usr/local/src/.ethereum/geth.ipc", "--networkid", "777" ]
+ENTRYPOINT [ "geth", "--identity", "BlockchainX", "--datadir", "/usr/local/src/ethereum/", "--rpc", "--rpcapi", "db,eth,net,web3,personal", "--rpcaddr", "0.0.0.0", "--rpcport", "8545", "--rpccorsdomain", "'*'", "--ipcpath", "/usr/local/src/.ethereum/geth.ipc", "--networkid", "777" ]
