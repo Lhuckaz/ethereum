@@ -78,5 +78,6 @@ honey move tube credit ozone toilet goat wreck small grocery just dumb
 # In Docker
 ```sh
 $ docker build -t "ethereum" .
+$ docker container run --name ethereum -d -p 8545:8545 ethereum
 $ docker exec -it ethereum geth attach ipc:///usr/local/src/.ethereum/geth.ipc
 ```
